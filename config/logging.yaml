@@ -1,0 +1,29 @@
+# =============================================================================
+# Standard Python logging config (loaded via logging.config.dictConfig)
+# WHY: consistent, structured logs across every module instead of ad-hoc
+# print() statements scattered through the pipeline.
+# =============================================================================
+version: 1
+disable_existing_loggers: false
+
+formatters:
+  standard:
+    format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: standard
+    stream: ext://sys.stdout
+
+  file:
+    class: logging.FileHandler
+    level: DEBUG
+    formatter: standard
+    filename: outputs/logs/pipeline.log
+    encoding: utf8
+
+root:
+  level: DEBUG
+  handlers: [console, file]

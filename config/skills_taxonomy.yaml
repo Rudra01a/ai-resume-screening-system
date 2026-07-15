@@ -1,0 +1,61 @@
+# =============================================================================
+# Canonical skills taxonomy used by src/extraction/skill_extractor.py
+# WHY a separate file: recruiters/domain experts can extend this list
+# without touching Python code, and it can later be swapped for a DB table.
+# =============================================================================
+
+programming_languages:
+  - python
+  - java
+  - javascript
+  - typescript
+  - c++
+  - c
+  - go
+  - solidity
+
+frameworks_libraries:
+  - react
+  - react.js
+  - node.js
+  - django
+  - flask
+  - tensorflow
+  - keras
+  - scikit-learn
+  - pytorch
+  - pandas
+  - numpy
+
+data_and_ml:
+  - machine learning
+  - deep learning
+  - nlp
+  - natural language processing
+  - computer vision
+  - data analysis
+  - data visualization
+
+databases:
+  - mysql
+  - postgresql
+  - mongodb
+  - sqlite
+  - firebase
+
+tools_platforms:
+  - git
+  - github
+  - docker
+  - kubernetes
+  - aws
+  - azure
+  - gcp
+  - streamlit
+
+soft_skills:
+  - communication
+  - leadership
+  - teamwork
+  - problem solving
+  - time management

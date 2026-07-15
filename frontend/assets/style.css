@@ -1,0 +1,6 @@
+/* Custom Streamlit styling.
+   Load via: st.markdown(f"<style>{open('frontend/assets/style.css').read()}</style>", unsafe_allow_html=True) */
+
+.stDataFrame {
+    font-size: 14px;
+}

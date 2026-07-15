@@ -1,0 +1,50 @@
+# =============================================================================
+# Master configuration file.
+# WHY: keeps every tunable value in one place so the pipeline can be
+# re-tuned (weights, paths, thresholds) without touching source code.
+# =============================================================================
+
+paths:
+  raw_resumes: "data/raw/resumes"
+  raw_job_descriptions: "data/raw/job_descriptions"
+  interim: "data/interim"
+  processed: "data/processed"
+  vectorizer_dir: "models/vectorizers"
+  model_dir: "models/trained"
+  ranked_output: "outputs/ranked_candidates"
+  reports_output: "outputs/reports"
+  logs: "outputs/logs"
+
+preprocessing:
+  lowercase: true
+  remove_stopwords: true
+  remove_punctuation: true
+  lemmatize: true
+  spacy_model: "en_core_web_sm"
+
+features:
+  tfidf:
+    max_features: 5000
+    ngram_range: [1, 2]
+    min_df: 1
+    max_df: 0.9
+
+similarity:
+  method: "cosine"          # future options: "jaccard", "embedding"
+
+# WHY separate weights: ranking should be a transparent, tunable formula,
+# not a black box - recruiters can be shown exactly how a score was built.
+ranking:
+  weights:
+    tfidf_similarity: 0.6
+    skill_match: 0.3
+    experience_match: 0.1
+  top_k: 20
+
+reporting:
+  format: "pdf"              # options: "pdf", "csv"
+  include_score_breakdown: true
+
+logging:
+  level: "INFO"
+  log_file: "outputs/logs/pipeline.log"
