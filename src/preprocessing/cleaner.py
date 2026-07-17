@@ -21,8 +21,10 @@ def clean_text(text: str, remove_punctuation: bool = True, lowercase: bool = Tru
 
     if remove_punctuation:
         text = re.sub(r"[^a-zA-Z0-9@.\s]", " ", text)  # keep @ and . for emails
-
     if lowercase:
         text = text.lower()
 
-    return text.strip()
+    # Collapse whitespace again after punctuation removal
+        text = re.sub(r"\s+", " ", text)
+
+        return text.strip()
