@@ -1,0 +1,54 @@
+2026-07-19 01:00:58 | INFO | Pipeline started.
+2026-07-19 01:01:00 | INFO | Pipeline completed successfully.
+2026-07-19 01:20:33 | INFO | Pipeline started.
+2026-07-19 01:20:33 | INFO | Reading Resume_1_Data_Scientist_AnanyaSharma.pdf
+2026-07-19 01:20:33 | INFO | Reading Resume_2_ML_Engineer_RohanVerma.pdf
+2026-07-19 01:20:33 | INFO | Reading Resume_3_Data_Analyst_PriyaNair.pdf
+2026-07-19 01:20:33 | INFO | Reading Resume_4_Python_Developer_KaranMehta.pdf
+2026-07-19 01:20:33 | INFO | Reading Resume_5_Fresh_Graduate_AditiKapoor.pdf
+2026-07-19 01:20:33 | INFO | Loaded 5 resumes.
+2026-07-19 01:31:36 | INFO | Pipeline started.
+2026-07-19 01:31:36 | INFO | Reading Resume_1_Data_Scientist_AnanyaSharma.pdf
+2026-07-19 01:31:36 | INFO | Reading Resume_2_ML_Engineer_RohanVerma.pdf
+2026-07-19 01:31:36 | INFO | Reading Resume_3_Data_Analyst_PriyaNair.pdf
+2026-07-19 01:31:36 | INFO | Reading Resume_4_Python_Developer_KaranMehta.pdf
+2026-07-19 01:31:36 | INFO | Reading Resume_5_Fresh_Graduate_AditiKapoor.pdf
+2026-07-19 01:31:36 | INFO | Loaded 5 resumes.
+2026-07-19 01:31:38 | INFO | Pipeline completed successfully.
+2026-07-19 01:42:05 | INFO | Pipeline started.
+2026-07-19 01:42:05 | INFO | Reading Resume_1_Data_Scientist_AnanyaSharma.pdf
+2026-07-19 01:42:05 | INFO | Reading Resume_2_ML_Engineer_RohanVerma.pdf
+2026-07-19 01:42:05 | INFO | Reading Resume_3_Data_Analyst_PriyaNair.pdf
+2026-07-19 01:42:05 | INFO | Reading Resume_4_Python_Developer_KaranMehta.pdf
+2026-07-19 01:42:05 | INFO | Reading Resume_5_Fresh_Graduate_AditiKapoor.pdf
+2026-07-19 01:42:05 | INFO | Loaded 5 resumes.
+2026-07-19 01:42:05 | INFO | Preprocessing resumes...
+2026-07-19 01:42:06 | INFO | Preprocessed 5 resumes.
+2026-07-19 01:42:06 | INFO | Extracting skills from resumes...
+2026-07-19 01:42:07 | INFO | Resume_5_Fresh_Graduate_AditiKapoor -> 15 skills extracted
+2026-07-19 01:42:07 | INFO | Resume skill extraction completed.
+2026-07-19 01:42:07 | INFO | Extracting job description skills...
+2026-07-19 01:42:07 | INFO | Extracted 12 skills from the job description.
+2026-07-19 01:42:07 | INFO | Pipeline completed successfully.
+2026-07-19 01:48:32 | INFO | Reading Resume_1_Data_Scientist_AnanyaSharma.pdf
+2026-07-19 01:48:32 | INFO | Reading Resume_2_ML_Engineer_RohanVerma.pdf
+2026-07-19 01:48:32 | INFO | Reading Resume_3_Data_Analyst_PriyaNair.pdf
+2026-07-19 01:48:32 | INFO | Reading Resume_4_Python_Developer_KaranMehta.pdf
+2026-07-19 01:48:32 | INFO | Reading Resume_5_Fresh_Graduate_AditiKapoor.pdf
+2026-07-19 01:48:32 | INFO | Loaded 5 resumes.
+2026-07-19 01:53:19 | INFO | Pipeline started.
+2026-07-19 01:53:19 | INFO | Loading resumes...
+2026-07-19 01:53:19 | INFO | Reading Resume_1_Data_Scientist_AnanyaSharma.pdf
+2026-07-19 01:53:19 | INFO | Reading Resume_2_ML_Engineer_RohanVerma.pdf
+2026-07-19 01:53:19 | INFO | Reading Resume_3_Data_Analyst_PriyaNair.pdf
+2026-07-19 01:53:19 | INFO | Reading Resume_4_Python_Developer_KaranMehta.pdf
+2026-07-19 01:53:19 | INFO | Reading Resume_5_Fresh_Graduate_AditiKapoor.pdf
+2026-07-19 01:53:19 | INFO | Loaded 5 resumes.
+2026-07-19 01:53:19 | INFO | Preprocessing resumes...
+2026-07-19 01:53:20 | INFO | Preprocessed 5 resumes.
+2026-07-19 01:53:20 | INFO | Extracting skills from resumes...
+2026-07-19 01:53:21 | INFO | Resume_5_Fresh_Graduate_AditiKapoor -> 15 skills extracted
+2026-07-19 01:53:21 | INFO | Resume skill extraction completed.
+2026-07-19 01:53:21 | INFO | Extracting job description skills...
+2026-07-19 01:53:21 | INFO | Extracted 12 skills from the job description.
+2026-07-19 01:53:21 | INFO | Pipeline completed successfully.
