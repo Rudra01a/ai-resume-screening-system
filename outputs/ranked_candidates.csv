@@ -1,6 +1,6 @@
 rank,candidate_id,TF-IDF Similarity,Skill Match (%),Final Score
-1,Resume_1_Data_Scientist_AnanyaSharma,0.0971,58.33,0.2333
-2,Resume_5_Fresh_Graduate_AditiKapoor,0.0636,58.33,0.2132
-3,Resume_2_ML_Engineer_RohanVerma,0.0806,41.67,0.1734
-4,Resume_4_Python_Developer_KaranMehta,0.0216,41.67,0.138
-5,Resume_3_Data_Analyst_PriyaNair,0.0085,16.67,0.0551
+1,Resume_1_Data_Scientist_AnanyaSharma,0.0971,58.33,0.2916
+2,Resume_5_Fresh_Graduate_AditiKapoor,0.0636,58.33,0.2715
+3,Resume_2_ML_Engineer_RohanVerma,0.0806,41.67,0.2151
+4,Resume_4_Python_Developer_KaranMehta,0.0216,41.67,0.1796
+5,Resume_3_Data_Analyst_PriyaNair,0.0085,16.67,0.0717

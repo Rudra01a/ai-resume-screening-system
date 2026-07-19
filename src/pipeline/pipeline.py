@@ -4,6 +4,8 @@ End-to-end Resume Screening Pipeline.
 
 from pathlib import Path
 
+import time
+from src.config import OUTPUT_DIR, TFIDF_WEIGHT, SKILL_WEIGHT, JOB_TITLE
 from src.similarity.cosine_similarity import compute_similarity
 from src.similarity.skill_match import compute_skill_match
 from src.similarity.scorer import compute_weighted_score
@@ -27,7 +29,7 @@ class ResumeScreeningPipeline:
         self,
         resumes_dir: str | Path,
         job_description: str,
-        output_dir: str | Path = "outputs",
+        output_dir: str | Path = OUTPUT_DIR,
     ):
         self.resumes_dir = Path(resumes_dir)
         self.job_description = job_description
@@ -96,11 +98,11 @@ class ResumeScreeningPipeline:
             print(
                 f"{resume['candidate_id']} -> "
                 f"{len(skills)} skills found"
-        )
+            )
 
-        self.logger.info(
-            f"{resume['candidate_id']} -> {len(skills)} skills extracted"
-        )
+            self.logger.info(
+                f"{resume['candidate_id']} -> {len(skills)} skills extracted"
+            )
 
         print(f"Extracted skills from {len(resumes)} resumes.")
         self.logger.info("Resume skill extraction completed.")
@@ -260,36 +262,46 @@ class ResumeScreeningPipeline:
         Generate CSV and PDF reports.
         """
 
-        self.output_dir.mkdir(
-            parents=True,
-            exist_ok=True,
-        )
+        self.logger.info("Generating reports...")
 
-        csv_path = self.output_dir / "ranked_candidates.csv"
-        pdf_path = self.output_dir / "ranked_candidates.pdf"
+        try:
+            self.output_dir.mkdir(
+                parents=True,
+                exist_ok=True,
+            )
 
-        generate_csv_report(
-            ranked_candidates,
-            csv_path,
-        )
+            csv_path = self.output_dir / "ranked_candidates.csv"
+            pdf_path = self.output_dir / "ranked_candidates.pdf"
 
-        generate_pdf_report(
-            ranked_candidates,
-            pdf_path,
-            job_title="Data Scientist",
-        )
+            generate_csv_report(
+                ranked_candidates,
+                csv_path,
+            )
 
-        print("\nReports Generated")
-        print("-" * 40)
-        print(f"CSV Report : {csv_path}")
-        print(f"PDF Report : {pdf_path}")
-        print("-" * 40)
+            generate_pdf_report(
+                ranked_candidates,
+                pdf_path,
+                job_title=JOB_TITLE,
+            )
+
+            self.logger.info("Reports generated successfully.")
+
+            print("\nReports Generated")
+            print("-" * 40)
+            print(f"CSV Report : {csv_path}")
+            print(f"PDF Report : {pdf_path}")
+            print("-" * 40)
+
+        except Exception:
+            self.logger.exception("Failed to generate reports.")
+            raise
 
     def run(self):
         print("=" * 60)
         print("AI Resume Screening Pipeline")
         print("=" * 60)
 
+        start_time = time.time()
         self.logger.info("Pipeline started.")
 
         # Step 1: Load resumes
@@ -340,8 +352,21 @@ class ResumeScreeningPipeline:
             ranked_candidates,
         )
 
+        execution_time = time.time() - start_time
+
+        print("\nPipeline Statistics")
+        print("=" * 60)
+        print(f"Execution Time    : {execution_time:.2f} seconds")
+        print(f"Resumes Processed : {len(resumes)}")
+        print(f"Job Skills Found  : {len(job_skills)}")
+        print(f"Average Similarity: {sum(similarity_scores) / len(similarity_scores):.4f}")
+        print(f"Top Candidate     : {ranked_candidates.iloc[0]['candidate_id']}")
+        print("=" * 60)
+
         print("\nPipeline completed successfully.")
 
-        self.logger.info("Pipeline completed successfully.")
+        self.logger.info(
+            f"Pipeline completed successfully in {execution_time:.2f} seconds."
+        )
 
         return ranked_candidates

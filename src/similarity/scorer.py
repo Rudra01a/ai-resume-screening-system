@@ -1,8 +1,8 @@
 """
-Combine similarity + skill-match signals into a single weighted score per
-candidate, using weights from config/config.yaml.
+Combine similarity and skill-match signals into a single weighted score
+using weights defined in src/config.py.
 """
-
+from src.config import TFIDF_WEIGHT, SKILL_WEIGHT
 
 def compute_weighted_score(tfidf_similarity: float, skill_match: float,
                             experience_match: float = 0.0,
@@ -19,8 +19,11 @@ def compute_weighted_score(tfidf_similarity: float, skill_match: float,
         Weighted composite score (0-1).
     """
     if weights is None:
-        weights = {"tfidf_similarity": 0.6, "skill_match": 0.3, "experience_match": 0.1}
-
+        weights = {
+        "tfidf_similarity": TFIDF_WEIGHT,
+        "skill_match": SKILL_WEIGHT,
+        "experience_match": 0.0,
+    }
     return (
         weights["tfidf_similarity"] * tfidf_similarity
         + weights["skill_match"] * skill_match

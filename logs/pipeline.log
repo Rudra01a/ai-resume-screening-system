@@ -52,3 +52,107 @@
 2026-07-19 01:53:21 | INFO | Extracting job description skills...
 2026-07-19 01:53:21 | INFO | Extracted 12 skills from the job description.
 2026-07-19 01:53:21 | INFO | Pipeline completed successfully.
+2026-07-19 11:07:04 | INFO | Pipeline started.
+2026-07-19 11:07:04 | INFO | Loading resumes...
+2026-07-19 11:07:04 | INFO | Reading Resume_1_Data_Scientist_AnanyaSharma.pdf
+2026-07-19 11:07:04 | INFO | Reading Resume_2_ML_Engineer_RohanVerma.pdf
+2026-07-19 11:07:04 | INFO | Reading Resume_3_Data_Analyst_PriyaNair.pdf
+2026-07-19 11:07:04 | INFO | Reading Resume_4_Python_Developer_KaranMehta.pdf
+2026-07-19 11:07:04 | INFO | Reading Resume_5_Fresh_Graduate_AditiKapoor.pdf
+2026-07-19 11:07:04 | INFO | Loaded 5 resumes.
+2026-07-19 11:07:04 | INFO | Preprocessing resumes...
+2026-07-19 11:07:06 | INFO | Preprocessed 5 resumes.
+2026-07-19 11:07:06 | INFO | Extracting skills from resumes...
+2026-07-19 11:07:07 | INFO | Resume_5_Fresh_Graduate_AditiKapoor -> 15 skills extracted
+2026-07-19 11:07:07 | INFO | Resume skill extraction completed.
+2026-07-19 11:07:07 | INFO | Extracting job description skills...
+2026-07-19 11:07:07 | INFO | Extracted 12 skills from the job description.
+2026-07-19 11:07:07 | INFO | Building TF-IDF feature matrix...
+2026-07-19 11:07:07 | INFO | TF-IDF feature matrix built successfully.
+2026-07-19 11:07:07 | INFO | Generating reports...
+2026-07-19 11:07:07 | INFO | Reports generated successfully.
+2026-07-19 11:07:07 | INFO | Pipeline completed successfully.
+2026-07-19 11:26:34 | INFO | Pipeline started.
+2026-07-19 11:26:34 | INFO | Loading resumes...
+2026-07-19 11:26:34 | INFO | Reading Resume_1_Data_Scientist_AnanyaSharma.pdf
+2026-07-19 11:26:34 | INFO | Reading Resume_2_ML_Engineer_RohanVerma.pdf
+2026-07-19 11:26:34 | INFO | Reading Resume_3_Data_Analyst_PriyaNair.pdf
+2026-07-19 11:26:34 | INFO | Reading Resume_4_Python_Developer_KaranMehta.pdf
+2026-07-19 11:26:34 | INFO | Reading Resume_5_Fresh_Graduate_AditiKapoor.pdf
+2026-07-19 11:26:34 | INFO | Loaded 5 resumes.
+2026-07-19 11:26:34 | INFO | Preprocessing resumes...
+2026-07-19 11:26:35 | INFO | Preprocessed 5 resumes.
+2026-07-19 11:26:35 | INFO | Extracting skills from resumes...
+2026-07-19 11:26:36 | INFO | Resume_5_Fresh_Graduate_AditiKapoor -> 15 skills extracted
+2026-07-19 11:26:36 | INFO | Resume skill extraction completed.
+2026-07-19 11:26:36 | INFO | Extracting job description skills...
+2026-07-19 11:26:36 | INFO | Extracted 12 skills from the job description.
+2026-07-19 11:26:36 | INFO | Building TF-IDF feature matrix...
+2026-07-19 11:26:36 | INFO | TF-IDF feature matrix built successfully.
+2026-07-19 11:26:36 | INFO | Generating reports...
+2026-07-19 11:26:36 | INFO | Reports generated successfully.
+2026-07-19 11:26:36 | INFO | Pipeline completed successfully.
+2026-07-19 11:29:10 | INFO | Pipeline started.
+2026-07-19 11:29:10 | INFO | Loading resumes...
+2026-07-19 11:29:10 | INFO | Reading Resume_1_Data_Scientist_AnanyaSharma.pdf
+2026-07-19 11:29:10 | INFO | Reading Resume_2_ML_Engineer_RohanVerma.pdf
+2026-07-19 11:29:10 | INFO | Reading Resume_3_Data_Analyst_PriyaNair.pdf
+2026-07-19 11:29:10 | INFO | Reading Resume_4_Python_Developer_KaranMehta.pdf
+2026-07-19 11:29:10 | INFO | Reading Resume_5_Fresh_Graduate_AditiKapoor.pdf
+2026-07-19 11:29:10 | INFO | Loaded 5 resumes.
+2026-07-19 11:29:10 | INFO | Preprocessing resumes...
+2026-07-19 11:29:10 | INFO | Preprocessed 5 resumes.
+2026-07-19 11:29:10 | INFO | Extracting skills from resumes...
+2026-07-19 11:29:11 | INFO | Resume_5_Fresh_Graduate_AditiKapoor -> 15 skills extracted
+2026-07-19 11:29:11 | INFO | Resume skill extraction completed.
+2026-07-19 11:29:11 | INFO | Extracting job description skills...
+2026-07-19 11:29:11 | INFO | Extracted 12 skills from the job description.
+2026-07-19 11:29:11 | INFO | Building TF-IDF feature matrix...
+2026-07-19 11:29:11 | INFO | TF-IDF feature matrix built successfully.
+2026-07-19 11:29:11 | INFO | Generating reports...
+2026-07-19 11:29:11 | INFO | Reports generated successfully.
+2026-07-19 11:29:11 | INFO | Pipeline completed successfully.
+2026-07-19 11:31:47 | INFO | Pipeline started.
+2026-07-19 11:31:47 | INFO | Loading resumes...
+2026-07-19 11:31:47 | INFO | Reading Resume_1_Data_Scientist_AnanyaSharma.pdf
+2026-07-19 11:31:47 | INFO | Reading Resume_2_ML_Engineer_RohanVerma.pdf
+2026-07-19 11:31:47 | INFO | Reading Resume_3_Data_Analyst_PriyaNair.pdf
+2026-07-19 11:31:47 | INFO | Reading Resume_4_Python_Developer_KaranMehta.pdf
+2026-07-19 11:31:47 | INFO | Reading Resume_5_Fresh_Graduate_AditiKapoor.pdf
+2026-07-19 11:31:47 | INFO | Loaded 5 resumes.
+2026-07-19 11:31:47 | INFO | Preprocessing resumes...
+2026-07-19 11:31:48 | INFO | Preprocessed 5 resumes.
+2026-07-19 11:31:48 | INFO | Extracting skills from resumes...
+2026-07-19 11:31:49 | INFO | Resume_5_Fresh_Graduate_AditiKapoor -> 15 skills extracted
+2026-07-19 11:31:49 | INFO | Resume skill extraction completed.
+2026-07-19 11:31:49 | INFO | Extracting job description skills...
+2026-07-19 11:31:49 | INFO | Extracted 12 skills from the job description.
+2026-07-19 11:31:49 | INFO | Building TF-IDF feature matrix...
+2026-07-19 11:31:49 | INFO | TF-IDF feature matrix built successfully.
+2026-07-19 11:31:49 | INFO | Generating reports...
+2026-07-19 11:31:49 | INFO | Reports generated successfully.
+2026-07-19 11:31:49 | INFO | Pipeline completed successfully in 1.57 seconds.
+2026-07-19 11:36:09 | INFO | Pipeline started.
+2026-07-19 11:36:09 | INFO | Loading resumes...
+2026-07-19 11:36:09 | INFO | Reading Resume_1_Data_Scientist_AnanyaSharma.pdf
+2026-07-19 11:36:09 | INFO | Reading Resume_2_ML_Engineer_RohanVerma.pdf
+2026-07-19 11:36:09 | INFO | Reading Resume_3_Data_Analyst_PriyaNair.pdf
+2026-07-19 11:36:09 | INFO | Reading Resume_4_Python_Developer_KaranMehta.pdf
+2026-07-19 11:36:09 | INFO | Reading Resume_5_Fresh_Graduate_AditiKapoor.pdf
+2026-07-19 11:36:09 | INFO | Loaded 5 resumes.
+2026-07-19 11:36:09 | INFO | Preprocessing resumes...
+2026-07-19 11:36:10 | INFO | Preprocessed 5 resumes.
+2026-07-19 11:36:10 | INFO | Extracting skills from resumes...
+2026-07-19 11:36:10 | INFO | Resume_1_Data_Scientist_AnanyaSharma -> 10 skills extracted
+2026-07-19 11:36:10 | INFO | Resume_2_ML_Engineer_RohanVerma -> 11 skills extracted
+2026-07-19 11:36:10 | INFO | Resume_3_Data_Analyst_PriyaNair -> 4 skills extracted
+2026-07-19 11:36:10 | INFO | Resume_4_Python_Developer_KaranMehta -> 12 skills extracted
+2026-07-19 11:36:10 | INFO | Resume_5_Fresh_Graduate_AditiKapoor -> 15 skills extracted
+2026-07-19 11:36:10 | INFO | Resume skill extraction completed.
+2026-07-19 11:36:10 | INFO | Extracting job description skills...
+2026-07-19 11:36:10 | INFO | Extracted 12 skills from the job description.
+2026-07-19 11:36:10 | INFO | Building TF-IDF feature matrix...
+2026-07-19 11:36:10 | INFO | TF-IDF feature matrix built successfully.
+2026-07-19 11:36:10 | INFO | Generating reports...
+2026-07-19 11:36:10 | INFO | Reports generated successfully.
+2026-07-19 11:36:10 | INFO | Pipeline completed successfully in 1.46 seconds.
